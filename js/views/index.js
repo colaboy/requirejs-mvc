@@ -1,5 +1,5 @@
 require(
-	['zepto','template','text!../templates/tpl-index.html','validate'],
+	['zepto','template','text!../templates/index-list.html','validate'],
 	function($,template,tplIndex,validate){
 		var view={
             /*=========================
