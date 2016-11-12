@@ -1,6 +1,7 @@
 require(
-	['zepto','template','text!../templates/index-list.html','validate'],
-	function($,template,tplIndex,validate){
+	['zepto','template','echarts','validate'
+    ,'text!../templates/index-list.html'],
+	function($,template,echarts,validate,tplIndex){
 		var view={
             /*=========================
               Model
