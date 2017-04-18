@@ -1,14 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon.png">
+    <title>示例首页</title>
+    <link rel="stylesheet" href="scripts/lib/seedsui/seedsui.min.css">
 </head>
-<body>
-	<!--注入至此div-->
-	<div id="ID-List"></div>
+<body ontouchstart="">
+    <header>
+        <div class="titlebar">
+            <a class="titlebar-button" href="javascript:back()"><i class="icon icon-arrowleft"></i></a>
+            <h1 class="titlebar-title">示例首页</h1>
+        </div>
+    </header>
+    <article>
+		<!--注入至此div-->
+		<div id="ID-List"></div>
+    </article>
+    
+    <!-- 加载遮罩 -->
+    <div class="loading" id="ID-Loading" style="display: block;">
+        <div class="loading-progress-box">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
 	
 	<!--RequireJS-->
 	<script type="text/javascript" src="scripts/lib/require/require.min.js" data-main="scripts/views/indexView.js"></script>
